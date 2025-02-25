@@ -135,3 +135,8 @@ But it is important to use it responsibly and ethically. Here are some guideline
 9. Document your scraping process thoroughly for replicability, transparency and accountability.
 
 10. Continuously re-evaluate your scraping program against applicable laws and ethical principles.
+
+# Modifications
+The main change made to the scraping process was changing the target element to the news column's top headline a tag. 
+I did this by first finding the containing div, which has the class "col-sm-6 section-news", then found the a tag within that had the class "frontpage-link medium-link newstop".
+I chose this approach, as it kept the code very similar, as I wanted to keep it stable and not implement too many modifications that could break the scraper's functionality.
